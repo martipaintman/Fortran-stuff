@@ -26,7 +26,7 @@ c Demanem que ens digui els limits de la y
         write(*,*)'Increment massa gran'
         goto 2
       endif
-C Same with x lol
+c Same with x lol
  3    write(*,*) 'introdueix l''extrem superior'
       read(*,*) xa
       write(*,*) 'introdueix l''extrem inferior'
