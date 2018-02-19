@@ -3,11 +3,11 @@ c Programa funció inversa     ***NO FUNCIONA xdxdxd****
       implicit none
       double precision yb,dy,xa,xb,xt,epsilon,error,f,y,x
       integer n
+      f(x)=dcos(x)-x-y
 c Definim tota la merda
       epsilon=1.d-10
       error=1000.d0
       n=0
-      f(x)=dcos(x)-x-y
       open(1,file='inversa.dat')
 c Demanem que ens digui els limits de la y
  1    write(*,*)'introdueix l''extrem esquerre de la y'
@@ -27,9 +27,9 @@ c Demanem que ens digui els limits de la y
         goto 2
       endif
 C Same with x lol
- 3    write(*,*) 'introdueix l''extrem inferior'
+ 3    write(*,*) 'introdueix l''extrem inferior de la x'
       read(*,*) xa
-      write(*,*) 'introdueix l''extrem superior'
+      write(*,*) 'introdueix l''extrem superior de la x'
       read(*,*) xb
 
       if(xa.gt.xb) then
