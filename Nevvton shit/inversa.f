@@ -1,4 +1,4 @@
-c Programa funció inversa     ***NO FUNCIONA xdxdxd****
+c Programa funció inversa     
       program inversa
       implicit none
       double precision yb,dy,xa,xb,xt,epsilon,error,f,y,x,xa1,xb1
