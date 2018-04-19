@@ -42,7 +42,6 @@ c%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       return
       end function
 
-      double precision function fun(x)
 c%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 c 1) Histogram
 
@@ -128,7 +127,7 @@ c quantitat de punts desitjats ndat
 c output: vector xnums amb el resultat
       implicit none
       external fun
-      integer ndat,iseed
+      integer ndat,iseed,sac
       double precision a,b,M,fun,xnums,txi1,txi2,x,p,mitja
       dimension xnums(ndat)
       sac = 0
@@ -143,7 +142,7 @@ c output: vector xnums amb el resultat
          if (fun(x).ge.p) then
             sac = sac + 1
             xnums(sac) = x
-            mitja = mitja + x
+c            mitja = mitja + x
          else
             continue
          endif
